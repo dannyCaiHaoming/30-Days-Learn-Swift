@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="Play_Local_Video" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="223.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-Wq-L9e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
+                    </imageView>
+                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoB-8a-HiY">
+                        <rect key="frame" x="182" y="87" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VoB-8a-HiY" secondAttribute="height" multiplier="1:1" id="46g-hC-koP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="▶︎">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="playButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DZw-TQ-7zJ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Src-G3-8Ad">
+                        <rect key="frame" x="207" y="147" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qJq-O2-sI8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VoB-8a-HiY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0ya-gA-Y4E"/>
+                    <constraint firstItem="VoB-8a-HiY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="9IP-qd-vat"/>
+                    <constraint firstItem="Src-G3-8Ad" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GNE-v5-4LI"/>
+                    <constraint firstItem="Src-G3-8Ad" firstAttribute="top" secondItem="VoB-8a-HiY" secondAttribute="bottom" constant="10" id="VG2-cJ-VP9"/>
+                    <constraint firstAttribute="bottom" secondItem="EhT-Wq-L9e" secondAttribute="bottom" id="X57-8V-mtv"/>
+                    <constraint firstItem="VoB-8a-HiY" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="50:414" id="bHn-Wz-qhW"/>
+                    <constraint firstAttribute="trailing" secondItem="EhT-Wq-L9e" secondAttribute="trailing" id="m1f-bC-cHP"/>
+                    <constraint firstItem="EhT-Wq-L9e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pw6-G0-lN3"/>
+                    <constraint firstItem="EhT-Wq-L9e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x7O-qe-Abp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="EhT-Wq-L9e" id="ZUX-2M-Qo8"/>
+                <outlet property="playButton" destination="VoB-8a-HiY" id="UfV-nH-ziq"/>
+                <outlet property="titleLabel" destination="Src-G3-8Ad" id="kEj-Cw-JFU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
