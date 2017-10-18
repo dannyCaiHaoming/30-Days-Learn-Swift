@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "652B0FAFF0621813121B993BC4586A834B131567",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : 9223372036854775807,
+    "652B0FAFF0621813121B993BC4586A834B131567" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EE1BB76B-A036-419F-9077-666D11FB8F7F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : "",
+    "652B0FAFF0621813121B993BC4586A834B131567" : "30-Days%20Learn%20Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CarouselEffect",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CarouselEffect\/CarouselEffect.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/30-Days-Learn-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "652B0FAFF0621813121B993BC4586A834B131567"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/iOS_Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "931138AF7249ACE7EA419C5C0A6202C46B99FA9F"
+    }
+  ]
+}
