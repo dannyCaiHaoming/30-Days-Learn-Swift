@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "652B0FAFF0621813121B993BC4586A834B131567",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : 9223372036854775807,
+    "652B0FAFF0621813121B993BC4586A834B131567" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C2570823-5A3E-464B-9515-A047C224D669",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : "",
+    "652B0FAFF0621813121B993BC4586A834B131567" : "30-Days%20Learn%20Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClearPrioritizeTable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClearPrioritizeTable\/ClearPrioritizeTable.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/30-Days-Learn-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "652B0FAFF0621813121B993BC4586A834B131567"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/iOS_Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "931138AF7249ACE7EA419C5C0A6202C46B99FA9F"
+    }
+  ]
+}
