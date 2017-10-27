@@ -47,9 +47,9 @@ import UIKit
         counterColor.setStroke()
         path.stroke()
         
-        if counter <= 0  {
-            return
-        }
+//        if counter <= 0  {
+//            return
+//        }
         if counter > 8 {
             counter = 8
         }
@@ -70,6 +70,51 @@ import UIKit
         
         outlinePath.lineWidth = Constants.lineWidth
         outlinePath.stroke()
+        
+        
+        
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //1 - save original state
+        context.saveGState()
+//        outLineColor.setFill()
+//        UIColor.white.setFill()
+        
+        let markerWidth:CGFloat = 5.0
+        let markerSize:CGFloat = 10.0
+        
+        //2 - the marker rectangle positioned at the top left
+        let markerPath = UIBezierPath(rect:
+            CGRect(x: -markerWidth/2,
+                   y: 0,
+                   width: markerWidth,
+                   height: markerSize))
+//        markerPath.fill()
+//        3 - move top left of context to the previous center position
+        context.translateBy(x: rect.width/2,
+                             y: rect.height/2)
+        
+        for i in 1...Constants.numberOfClasses {
+            //4 - save the centred context
+            context.saveGState()
+            
+            //5 - calculate the rotation angle
+            let angle = arcLengthPerGlass * CGFloat(i) + startAngle - pi/2
+            
+            //rotate and translate
+            context.rotate(by: angle)
+            context.translateBy(x: 0,
+                                 y: rect.height/2 - markerSize)
+            
+            //6 - fill the marker rectangle
+            markerPath.fill()
+            
+            //7 - restore the centred context for the next rotate
+            context.restoreGState()
+        }
+        
+        //8 - restore the original state in case of more painting
+        context.restoreGState()
         
         
     }
